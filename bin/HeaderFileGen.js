@@ -3,7 +3,7 @@ const path = require('path');
 
 const cwd = process.cwd();
 
-const isDev = process.argv[2] === '--dev';
+const isDev = process.argv[3] === '--dev';
 
 const pkgJSON = require('../package.json');
 
