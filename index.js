@@ -12,8 +12,8 @@
 // @updateURL    https://raw.githubusercontent.com/felixfong227/e621_helper_tampermonkey/master/index.js
 // @downloadURL  https://raw.githubusercontent.com/felixfong227/e621_helper_tampermonkey/master/index.js
 // @supportURL   https://github.com/felixfong227/e621_helper_tampermonkey/issues
-// @require      Utils.js
-// @require      Effects.js
+// @require      https://raw.githubusercontent.com/felixfong227/e621_helper_tampermonkey/1.0.0/Utils.js
+// @require      https://raw.githubusercontent.com/felixfong227/e621_helper_tampermonkey/1.0.0/Effects.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.4.27/bodymovin.min.js
 // @require      https://unpkg.com/tocca@2.0.4/Tocca.min.js
 // ==/UserScript==
