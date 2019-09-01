@@ -8,3 +8,9 @@
         if(window[opertor] && typeof window.notice === 'function') return window[opertor].call(null, prefixMsg + msg);
         return Utils.error('window.notice is not a valid function any more QvQ, WHYYYYYY DEV FROM E621!!!!!!!!!!!!!');
     },
+    notice: (msg, prefix) => {
+        Utils._notifyConstru('notice', msg, prefix)
+    },
+    error: (msg, prefix) => {
+        Utils._notifyConstru('error', msg, prefix);
+    },
