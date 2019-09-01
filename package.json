@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Little util script to help make e621.net a much better place then it already is :P",
   "scripts": {
-    "header": "node bin/HeaderFileGen.js"
+    "header:dev": "node bin/HeaderFileGen.js -- --dev",
+    "header": "node bin/HeaderFileGen.js -- --prod"
   },
   "repository": {
     "type": "git",
