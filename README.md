@@ -1,7 +1,6 @@
 # Installation
 
-### Greasy Fork
-* Visit https://greasyfork.org/en/scripts/389596-e621-net-helper
+Please visit https://github.com/felixfong227/e621_helper_tampermonkey/blob/master/Installation.md
 
 ## Features
 
