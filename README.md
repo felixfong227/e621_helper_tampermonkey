@@ -1,6 +1,6 @@
 # Installation
 
-Please visit https://github.com/felixfong227/e621_helper_tampermonkey/blob/master/Installation.md
+Please visit https://github.com/felixfong227/e621_helper_tampermonkey/blob/master/docs/Installation.md
 
 ## Features
 
@@ -15,5 +15,11 @@ Please visit https://github.com/felixfong227/e621_helper_tampermonkey/blob/maste
 3) Instagram-like double tap favorite
 
 <img src="https://i.imgur.com/BvdjA0a.gif">
+
+# Development
+
+Please visit https://github.com/felixfong227/e621_helper_tampermonkey/blob/master/docs/Development.md
+
+---
 
 Cute sauce: https://e621.net/post/show/1979317/-3-ambiguous_gender-anthro-blue_fur-blush-canid-fu

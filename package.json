@@ -1,0 +1,24 @@
+{
+  "name": "e621_net_helper",
+  "version": "1.0.0",
+  "description": "Little util script to help make e621.net a much better place then it already is :P",
+  "scripts": {
+    "header:dev": "node bin/HeaderFileGen.js -- --dev",
+    "header": "node bin/HeaderFileGen.js -- --prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felixfong227/e621_helper_tampermonkey.git"
+  },
+  "author": "Felix Fong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/felixfong227/e621_helper_tampermonkey/issues"
+  },
+  "homepage": "https://github.com/felixfong227/e621_helper_tampermonkey#readme",
+  "621_external_libraries": [
+    "https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.4.27/bodymovin.min.js",
+    "https://unpkg.com/tocca@2.0.4/Tocca.min.js"
+  ],
+  "621_registry": "https://raw.githubusercontent.com/felixfong227/e621_helper_tampermonkey/master"
+}
