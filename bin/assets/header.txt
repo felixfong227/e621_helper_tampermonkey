@@ -1,0 +1,23 @@
+// ==UserScript==
+//
+// This is a auto generated meta tags
+//
+// @name         e621.net Helper
+// @namespace    RainbowTheDashie
+// @version      $VERSION
+// @description  Little util script to help make e621.net a much better place then it already is :P
+// @author       RainbowTheDashie
+// @match        https://e621.net/post/*
+// @match        http://e621.net/post/*
+// @match        https://e621.net/post
+// @match        http://e621.net/post
+// @run-at       document-end
+// @require      $CWD\Utils.js
+// @require      $CWD\Effects.js
+//
+// All third parites libraryies
+$LIBS
+//
+// Entry point file
+// @require      $CWD\index.js
+// ==/UserScript==
