@@ -6,7 +6,25 @@
 
 ## Build For Development
 
-To get the correct meata tags, run `$ npm run header -- --dev`
+1) Run `$ npm run header:dev`
+
+2) Copy the header meta tags
+
+3) Oen the Tampermonkey dashboard and click the "Plus" sign
+
+<img src="https://i.imgur.com/qbjTgmA.png" />
+
+4) And once the web editor opens up, past your code inside the editor and press <kbd>CTRL</kbd> + <kbd>S</kbd> on Windows, <kbd>⌘ </kbd> + <kbd>S</kbd> on Mac
+
+<img src="https://i.imgur.com/5Bf9Sbx.png" />
+
+## Build For Production
+
+1) Run `$ npm run header`
+
+2) Open `index.js`
+
+3) Replace the "header meta tag with the newsly copied one
 
 # Environment Variables
 
