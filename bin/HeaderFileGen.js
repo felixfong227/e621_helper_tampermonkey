@@ -47,9 +47,11 @@ const allWindowsStylePath = headerFileModify.match(
     )
 );
 
-allWindowsStylePath.forEach(pathStr => {
-    const pathStrFixes = pathStr.replace(/\\/g, '/');
-    headerFileModify = headerFileModify.replace(pathStr, pathStrFixes);
-});
+if(allWindowsStylePath) {
+    allWindowsStylePath.forEach(pathStr => {
+        const pathStrFixes = pathStr.replace(/\\/g, '/');
+        headerFileModify = headerFileModify.replace(pathStr, pathStrFixes);
+    });
+}
 
 console.log(headerFileModify)
