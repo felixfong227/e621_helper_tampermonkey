@@ -35,6 +35,7 @@ let headerFileModify = headerFileRaw;
 for(let key in envs) {
     const regex = new RegExp( escapeRegExp(key) , 'gm');
     let value = envs[key];
+    if(isDev && key === '$CWD') value = `file://${value}`;
     headerFileModify = headerFileModify.replace(regex, value);
 }
 
