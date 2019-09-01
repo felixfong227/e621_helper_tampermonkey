@@ -35,10 +35,21 @@ let headerFileModify = headerFileRaw;
 for(let key in envs) {
     const regex = new RegExp( escapeRegExp(key) , 'gm');
     let value = envs[key];
-
-    if(key === '$CWD') value = value.replace(/\\/g, '/')
-
     headerFileModify = headerFileModify.replace(regex, value);
 }
+
+// Fix all $CWD path issues
+
+const allWindowsStylePath = headerFileModify.match(
+    new RegExp(
+        envs['$CWD'] + '(.*)',
+        'gm'
+    )
+);
+
+allWindowsStylePath.forEach(pathStr => {
+    const pathStrFixes = pathStr.replace(/\\/g, '/');
+    headerFileModify = headerFileModify.replace(pathStr, pathStrFixes);
+});
 
 console.log(headerFileModify)
