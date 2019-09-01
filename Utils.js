@@ -1,3 +1,4 @@
+var Utils = {
     errorConsole: function(msg) {
         if(msg) console.error('[e621.net Helper Utils Error] ' + msg);
     },
@@ -17,3 +18,7 @@
     toggleDisplayNone: elm => {
         elm.style.display = elm.style.display === 'none' ? '' : 'none';
     },
+    versionIncomparableErr: (msg, local, remote) => {
+        Utils.errorConsole(''+ msg + ', might lead to bugger or even leak of features, Running ' + local + ' but executing ' + remote + ' code! Be ware!');
+    }
+};
