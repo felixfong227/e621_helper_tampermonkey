@@ -14,3 +14,6 @@
     error: (msg, prefix) => {
         Utils._notifyConstru('error', msg, prefix);
     },
+    toggleDisplayNone: elm => {
+        elm.style.display = elm.style.display === 'none' ? '' : 'none';
+    },
