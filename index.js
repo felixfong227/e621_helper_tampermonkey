@@ -14,3 +14,8 @@
 // @require      https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.4.27/bodymovin.min.js
 // @require      https://unpkg.com/tocca@2.0.4/Tocca.min.js
 // ==/UserScript==
+
+window.tocca({
+    useJquery: false
+});
+
