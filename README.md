@@ -1,6 +1,6 @@
 # Installation
 
-[![](https://i.imgur.com/aGD58yN.png)](https://github.com/felixfong227/e621_helper_tampermonkey/raw/master/index.js)
+[![](https://i.imgur.com/aGD58yN.png)](https://raw.githubusercontent.com/felixfong227/e621_helper_tampermonkey/master/index.user.js)
 
 *If that install button dosen't work, please do visit [Installation.md](https://github.com/felixfong227/e621_helper_tampermonkey/blob/master/docs/Installation.md)*
 

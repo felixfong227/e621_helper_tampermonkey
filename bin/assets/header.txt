@@ -19,5 +19,5 @@
 $LIBS
 //
 // Entry point file
-// @require      $CWD\index.js
+// @require      $CWD\index.user.js
 // ==/UserScript==

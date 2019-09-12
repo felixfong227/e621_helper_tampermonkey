@@ -22,7 +22,7 @@
 
 1) Run `$ npm run header`
 
-2) Open `index.js`
+2) Open `index.user.js`
 
 3) Replace the "header meta tag with the newsly copied one
 
