@@ -1,6 +1,6 @@
 # Installation
 
-Please visit https://github.com/felixfong227/e621_helper_tampermonkey/blob/master/docs/Installation.md
+Please visit [Installation.md](https://github.com/felixfong227/e621_helper_tampermonkey/blob/master/docs/Installation.md)
 
 ## Features
 
@@ -18,7 +18,7 @@ Please visit https://github.com/felixfong227/e621_helper_tampermonkey/blob/maste
 
 # Development
 
-Please visit https://github.com/felixfong227/e621_helper_tampermonkey/blob/master/docs/Development.md
+Please visit [Development.md](https://github.com/felixfong227/e621_helper_tampermonkey/blob/master/docs/Development.md)
 
 ---
 
