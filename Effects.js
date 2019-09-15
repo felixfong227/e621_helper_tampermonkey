@@ -32,7 +32,7 @@ var Effects = {
                     renderer: 'svg',
                     loop: true,
                     autoplay: true,
-                    path: 'https://assets5.lottiefiles.com/datafiles/d9bc9kYC2VttaKb/data.json'
+                    path: 'https://bypasscors.herokuapp.com/api/?url=https://assets5.lottiefiles.com/datafiles/d9bc9kYC2VttaKb/data.json'
                 });
             } else {
                 // Show heart broken animation
@@ -41,7 +41,7 @@ var Effects = {
                     renderer: 'svg',
                     loop: true,
                     autoplay: true,
-                    path: 'https://assets5.lottiefiles.com/datafiles/tdCLmdmRpULFtsT/data.json',
+                    path: 'https://bypasscors.herokuapp.com/api/?url=https://assets5.lottiefiles.com/datafiles/tdCLmdmRpULFtsT/data.json',
                 }).setSpeed(2.5)
             }
 
