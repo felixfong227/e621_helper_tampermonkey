@@ -19,7 +19,8 @@
 // ==/UserScript==
 
 window.tocca({
-    useJquery: false
+    useJquery: false,
+    dbltapThreshold: 500,
 });
 
 'use strict';
