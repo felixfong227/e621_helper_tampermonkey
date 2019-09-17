@@ -1,10 +1,10 @@
 {
   "name": "e621_net_helper",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Little util script to help make e621.net a much better place then it already is :P",
   "scripts": {
-    "header:dev": "node bin/HeaderFileGen.js -- --dev",
-    "header": "node bin/HeaderFileGen.js -- --prod"
+    "build:dev": "node bin/build.js -- --dev",
+    "build": "node bin/build.js -- --prod"
   },
   "repository": {
     "type": "git",
