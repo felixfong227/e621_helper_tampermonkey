@@ -6,7 +6,7 @@
 
 ## Build For Development
 
-1) Run `$ npm run header:dev`
+1) Run `$ npm run build:dev`
 
 2) Copy the header meta tags
 
@@ -20,15 +20,14 @@
 
 ## Build For Production
 
-1) Run `$ npm run header`
-
-2) Open `index.user.js`
-
-3) Replace the "header meta tag with the newsly copied one
+1) Run `$ npm run build`
+2) 🕐🎩
+3) After Node perform those fancy magic, commit the bundle JS file(index.user.js)
+4) ✅
 
 # Environment Variables
 
-Variable that will going to replace wtih something more dynamic
+Variable that will going to replace with something more dynamic
 
 | ID        | Name                    | Description                                                  | Example                                                                        |   |
 |-----------|-------------------------|--------------------------------------------------------------|--------------------------------------------------------------------------------|---|
