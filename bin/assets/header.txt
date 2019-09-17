@@ -1,7 +1,4 @@
 // ==UserScript==
-//
-// This is a auto generated meta tags
-//
 // @name         e621.net Helper
 // @namespace    RainbowTheDashie
 // @version      $VERSION
@@ -12,12 +9,15 @@
 // @match        https://e621.net/post
 // @match        http://e621.net/post
 // @run-at       document-end
+//
+// @updateURL    https://raw.githubusercontent.com/felixfong227/e621_helper_tampermonkey/master/index.user.js
+// @downloadURL  https://raw.githubusercontent.com/felixfong227/e621_helper_tampermonkey/master/index.user.js
+// @supportURL   https://github.com/felixfong227/e621_helper_tampermonkey/issues
+//
 // @require      $CWD\Utils.js
 // @require      $CWD\Effects.js
 //
-// All third parites libraryies
 $LIBS
 //
-// Entry point file
 // @require      $CWD\index.user.js
 // ==/UserScript==
