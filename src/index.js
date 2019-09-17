@@ -1,28 +1,5 @@
-// ==UserScript==
-// @name         e621.net Helper
-// @namespace    RainbowTheDashie
-// @version      1.1.1
-// @description  Little util script to help make e621.net a much better place then it already is :P
-// @author       RainbowTheDashie
-// @match        https://e621.net/post/*
-// @match        http://e621.net/post/*
-// @match        https://e621.net/post
-// @match        http://e621.net/post
-// @run-at       document-end
-//
-// @updateURL    https://raw.githubusercontent.com/felixfong227/e621_helper_tampermonkey/master/index.user.js
-// @downloadURL  https://raw.githubusercontent.com/felixfong227/e621_helper_tampermonkey/master/index.user.js
-// @supportURL   https://github.com/felixfong227/e621_helper_tampermonkey/issues
-//
-// @require      https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.4.27/bodymovin.min.js
-// @require      https://unpkg.com/tocca@2.0.4/Tocca.min.js
-//
-// @require      https://raw.githubusercontent.com/felixfong227/e621_helper_tampermonkey/master/src/Utils.js
-// @require      https://raw.githubusercontent.com/felixfong227/e621_helper_tampermonkey/master/src/Effects.js
-//
-// 
-// ==/UserScript==
-
+import * from './Utils';
+import * from './Effects';
 
 window.tocca({
     useJquery: false,
