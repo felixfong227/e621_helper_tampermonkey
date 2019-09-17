@@ -64,9 +64,9 @@ Add URL as part of the  `621_external_libraries` sub element
 
 1) Run `$ npm run build`
 
-2) Open `index.user.js`
+2) 🕐🎩 Wait for Node to perform the magic
 
-3) Replace the "header meta tag with the newsly copied one
+3) ✅ Commit the latest bundle file (index.user.js)
 
 ---
 
