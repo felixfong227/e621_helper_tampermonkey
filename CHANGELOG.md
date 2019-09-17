@@ -8,3 +8,5 @@ initial release, yay
 ## [1.1.0]
 * Fixed the Lottie data file CORS issue
 * Increase the duration of the double tab from `200ms` to `500ms`
+* Add new [DevNote.md](https://github.com/felixfong227/e621_helper_tampermonkey/blob/master/docs/Development.md) for all impotent dev notes
+* Update the Tampermonkey meta header a little bit, add back `@updateURL` and `@downloadURL` and `@supportURL`
