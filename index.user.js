@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         e621.net Helper
 // @namespace    RainbowTheDashie
-// @version      1.0.0
+// @version      1.1.0
 // @description  Little util script to help make e621.net a much better place then it already is :P
 // @author       RainbowTheDashie
 // @match        https://e621.net/post/*
@@ -9,14 +9,20 @@
 // @match        https://e621.net/post
 // @match        http://e621.net/post
 // @run-at       document-end
+//
 // @updateURL    https://raw.githubusercontent.com/felixfong227/e621_helper_tampermonkey/master/index.user.js
 // @downloadURL  https://raw.githubusercontent.com/felixfong227/e621_helper_tampermonkey/master/index.user.js
 // @supportURL   https://github.com/felixfong227/e621_helper_tampermonkey/issues
-// @require      https://raw.githubusercontent.com/felixfong227/e621_helper_tampermonkey/1.0.0/Utils.js
-// @require      https://raw.githubusercontent.com/felixfong227/e621_helper_tampermonkey/1.0.0/Effects.js
+//
+// @require      https://raw.githubusercontent.com/felixfong227/e621_helper_tampermonkey/master/Utils.js
+// @require      https://raw.githubusercontent.com/felixfong227/e621_helper_tampermonkey/master/Effects.js
+//
 // @require      https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.4.27/bodymovin.min.js
 // @require      https://unpkg.com/tocca@2.0.4/Tocca.min.js
+//
+// @require      https://raw.githubusercontent.com/felixfong227/e621_helper_tampermonkey/master/index.user.js
 // ==/UserScript==
+
 
 window.tocca({
     useJquery: false,
