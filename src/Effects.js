@@ -1,7 +1,6 @@
 // All custom effects for the webpage
 var warpBefore = false;
 
-
 var Effects = {
     instagramLike(elm, isLike) {
         if(typeof isLike === 'undefined') isLike = true;
