@@ -1,6 +1,6 @@
 {
   "name": "e621_net_helper",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Little util script to help make e621.net a much better place then it already is :P",
   "scripts": {
     "header:dev": "node bin/HeaderFileGen.js -- --dev",
