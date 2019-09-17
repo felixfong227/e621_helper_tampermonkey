@@ -4,6 +4,46 @@
 
 :heart: Thank you for ur help UwU
 
+---
+
+## Import External Scrpits
+
+### Locals
+
+File splitting is a good thing, it help making the code base clean 🛁
+
+We are using ESM like import system
+
+⚠️NOT the official one, ever import MUST starts with `import * from`
+
+Example:
+```javascript
+// ./formatName.js
+function formatName(name) {
+    // ...
+}
+```
+
+```javascript
+// index.js
+import * from './formatName';
+(() => {
+    const name = 'Lucario'
+    const formattedName = formatName(name);
+})()
+```
+
+Remote Library
+
+You can add/remove remote library via their public URL
+
+Navigate to the `package.json` file, you should see a field named `621_external_libraries`
+
+Add URL as part of the  `621_external_libraries` sub element
+
+---
+
+
 ## Build For Development
 
 1) Run `$ npm run build:dev`
@@ -18,16 +58,21 @@
 
 <img src="https://i.imgur.com/5Bf9Sbx.png" />
 
+---
+
 ## Build For Production
 
 1) Run `$ npm run build`
-2) 🕐🎩
-3) After Node perform those fancy magic, commit the bundle JS file(index.user.js)
-4) ✅
+
+2) Open `index.user.js`
+
+3) Replace the "header meta tag with the newsly copied one
+
+---
 
 # Environment Variables
 
-Variable that will going to replace with something more dynamic
+Variable that will going to replace wtih something more dynamic
 
 | ID        | Name                    | Description                                                  | Example                                                                        |   |
 |-----------|-------------------------|--------------------------------------------------------------|--------------------------------------------------------------------------------|---|
