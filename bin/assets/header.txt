@@ -14,10 +14,9 @@
 // @downloadURL  https://raw.githubusercontent.com/felixfong227/e621_helper_tampermonkey/master/index.user.js
 // @supportURL   https://github.com/felixfong227/e621_helper_tampermonkey/issues
 //
-// @require      $CWD\Utils.js
-// @require      $CWD\Effects.js
-//
 $LIBS
+//
+$SRC
 //
 // @require      $CWD\index.user.js
 // ==/UserScript==
