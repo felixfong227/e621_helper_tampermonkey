@@ -40,7 +40,7 @@ const indexFileContent = fs.readFileSync(indexFilePath, 'utf8');
 
 function PushToImport(importFilePath) {
     let host = isDev === true ? path.dirname(indexFilePath) : 'raw.githubusercontent.com/felixfong227/e621_helper_tampermonkey/master/src/';
-    importFilePath = path.join(`${host}/${importFilePath}`);
+    importFilePath = path.join(`${host}/${importFilePath}`);    
     isDev === false ? importFilePath = `https://${importFilePath}` : importFilePath = `file://${importFilePath}`;
     let ext = '';
     if(!importFilePath.endsWith('.js')) ext = '.js'
@@ -76,6 +76,9 @@ if(allImportPartStatement) {
         if(importFilePath) PushToImport(importFilePath);
     }
 }
+
+// @FLAG
+if(process.argv.includes('--show-imports-tree')) console.log(importedFiles);
 
 let result = headerParser.Build(
     isDev,
