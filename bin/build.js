@@ -30,10 +30,10 @@ function ShowHint(flag, justShowIt=false) {
 }
 
 const regexs = {
-    import: /import \* from ('|")(.*)('|")(;?)/gm,
+    import: /import\s+\*\s+as\s+(\w\d?)+\s+from\s+('.*'|".*");?/gm,
+    importPart: /import\s+{.*}\s+from\s+('.*'|".*");?/gm,
     improtPath: /('|")(.*)('|")/
 }
-
 
 const indexFilePath = path.resolve(`${__dirname}/../src/index.js`);
 const indexFileContent = fs.readFileSync(indexFilePath, 'utf8');
