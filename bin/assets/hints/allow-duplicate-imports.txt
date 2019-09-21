@@ -1,0 +1,1 @@
+By using $FLAG can bypass any import duplicate checking, but allowing same package imported to the exact same workspace might cost issue like multiple constent variable error
