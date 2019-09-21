@@ -38,17 +38,43 @@ const regexs = {
 const indexFilePath = path.resolve(`${__dirname}/../src/index.js`);
 const indexFileContent = fs.readFileSync(indexFilePath, 'utf8');
 
-const allImportStatement = indexFileContent.match(regexs.import);
-    
-for(let importFilePath of allImportStatement) {
-    importFilePath = importFilePath.match(regexs.improtPath)[2];
+function PushToImport(importFilePath) {
     let host = isDev === true ? path.dirname(indexFilePath) : 'raw.githubusercontent.com/felixfong227/e621_helper_tampermonkey/master/src/';
     importFilePath = path.join(`${host}/${importFilePath}`);
-    
     isDev === false ? importFilePath = `https://${importFilePath}` : importFilePath = `file://${importFilePath}`;
     let ext = '';
     if(!importFilePath.endsWith('.js')) ext = '.js'
-    importedFiles.push(`// @require      ${importFilePath}${ext}`);
+    const formtedStr = `// @require      ${importFilePath}${ext}`;
+    
+    // @FLAG
+    if(importedFiles.includes(formtedStr)) {
+        if(process.argv.includes('--allow-duplicate-imports' )) {
+            console.warn('⚠️ Duplicate import')
+        } else {
+            // @HINT
+            ShowHint('allow-duplicate-imports');
+            console.warn(`⚠️🚚💥 Ignoring ${importFilePath} due to duplicate imports`);
+            return false;
+        }
+    }
+    console.log(`🚚 ${importFilePath}`);
+    importedFiles.push(formtedStr);
+}
+
+const allImportStatement = indexFileContent.match(regexs.import);
+if(allImportStatement) {
+    for(let importFilePath of allImportStatement) {
+        importFilePath = importFilePath.match(regexs.improtPath)[2];
+        if(importFilePath) PushToImport(importFilePath);
+    }
+}
+
+const allImportPartStatement = indexFileContent.match(regexs.importPart);
+if(allImportPartStatement) {
+    for(let importFilePath of allImportPartStatement) {
+        importFilePath = importFilePath.match(regexs.improtPath)[2];
+        if(importFilePath) PushToImport(importFilePath);
+    }
 }
 
 let result = headerParser.Build(
