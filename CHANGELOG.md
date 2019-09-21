@@ -14,3 +14,7 @@ initial release, yay
 ## [1.1.1]
 * Fixed the incorrect meta header file issue
 * Added brand new ESM like import, for details please visit [Development.md](https://github.com/felixfong227/e621_helper_tampermonkey/blob/master/docs/Development.md)
+
+## [1.1.2] 
+* Improve ELS import syntax
+* Improve build scripts by adding CLI flags

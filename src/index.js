@@ -1,5 +1,5 @@
-import * from './Utils';
-import * from './Effects';
+import * as Utils from './Utils';
+import * as Effects from './Effects';
 
 window.tocca({
     useJquery: false,
