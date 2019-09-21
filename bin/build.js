@@ -12,6 +12,23 @@ let flagsHint = {
         hint: true,
     },
 };
+
+function ShowHint(flag, justShowIt=false) {
+    if(flag && flagsHint[flag]) {
+        const hintBlock = flagsHint[flag];
+        if(justShowIt === false) {
+            // Already show this hint, stop poping it up
+            if(hintBlock.show === false) return false;
+        }
+        let hint = fs.readFileSync(path.resolve(`${__dirname}/./assets/hints/${flag}.txt`), 'utf8');
+        if(hint) {
+            hint = hint.replace(/\$FLAG/gm, `--${flag}`);
+            console.log(`---\n💡 Flags Hint: ${hint}\n---`);
+            hintBlock.show = false;
+        }
+    }
+}
+
 const regexs = {
     import: /import \* from ('|")(.*)('|")(;?)/gm,
     improtPath: /('|")(.*)('|")/
