@@ -7,6 +7,11 @@ const headerParser = require('./HeaderFileGen');
 
 const importedFiles = [];
 
+let flagsHint = {
+    'allow-duplicate-imports': {
+        hint: true,
+    },
+};
 const regexs = {
     import: /import \* from ('|")(.*)('|")(;?)/gm,
     improtPath: /('|")(.*)('|")/
