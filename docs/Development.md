@@ -14,7 +14,7 @@ File splitting is a good thing, it help making the code base clean 🛁
 
 We are using ESM like import system
 
-⚠️NOT the official one, ever import MUST starts with `import * from`
+⚠️NOT the official one, ever import MUST starts with `import * from as <any> from "<path>"`
 
 Example:
 ```javascript
@@ -26,7 +26,7 @@ function formatName(name) {
 
 ```javascript
 // index.js
-import * from './formatName';
+import * as formatName from './formatName';
 (() => {
     const name = 'Lucario'
     const formattedName = formatName(name);
