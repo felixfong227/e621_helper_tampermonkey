@@ -1,0 +1,44 @@
+name: Node CI
+
+on:
+  push:
+    branches:
+    - release/*
+    - development
+
+jobs:
+
+  build:
+
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        node-version: [10]
+        os: [ubuntu-latest]
+
+    steps:
+    
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }} | OS ${{ matrix.os }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: npm install, build, and push
+      run: |
+        npm install
+        npm run build
+      env:
+        CI: true
+        NODE_ENV: production
+        
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v1.4.0
+      env:
+        CI: true
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        PULL_REQUEST_LABELS: automated pr
+        PULL_REQUEST_BRANCH: automated-build
+        BRANCH_SUFFIX: short-commit-hash
+    - name: Check output environment variable
+      run: echo "Build Finished, Pull Request Number - $PULL_REQUEST_NUMBER"
