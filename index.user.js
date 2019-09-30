@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         e621.net Helper
 // @namespace    RainbowTheDashie
-// @version      1.1.1
+// @version      1.1.2
 // @description  Little util script to help make e621.net a much better place then it already is :P
 // @author       RainbowTheDashie
 // @match        https://e621.net/post/*
