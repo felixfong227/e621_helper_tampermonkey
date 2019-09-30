@@ -5,6 +5,8 @@ const isDev = process.argv[3] === '--dev';
 
 const headerParser = require('./HeaderFileGen');
 
+const pkgJSON = require('../package.json');
+
 const importedFiles = [];
 
 let flagsHint = {
@@ -99,3 +101,10 @@ overwriteFile += indexFileContent.replace(regexs.import, '');
 const userIndexScriptPath = path.join(`${__dirname}/../index.user.js`);
 
 fs.writeFileSync(userIndexScriptPath, overwriteFile);
+
+// CI Things
+
+if(process.env.CI) {
+    console.log('Running CI Build Jobs');
+    process.env.PULL_REQUEST_TITLE  = `Build Release For ${pkgJSON.version}`;
+}
